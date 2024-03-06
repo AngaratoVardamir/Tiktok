@@ -1,0 +1,84 @@
+:root{
+    --Cor00:#000000;
+    --Cor01:#ffffff;
+    --Cor02:#9fc8b6;
+    --Cor03:#e19e06;
+    --Cor04:#b54427;
+    --Cor05:#bba445;
+    --Cor06:#5e6a40;
+    /* Caixa 2 */
+    --altura:12px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Cor02);
+}
+#Tela{
+    background-color: var(--Cor04);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Cores Titulo */
+#Res{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#Caixa{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.Conteudo{
+    box-shadow: 2px 2px 5px #00000065;
+}
+.Conteudo, input{
+    font-size: 20px;
+    border: 2px solid var(--Cor02);
+}
+#Conteudo1{
+    background-color: var(--Cor06);
+    padding: 20px;
+    border-radius: 20% 0% 0% 20%;
+    color: var(--Cor01);
+}
+#Conteudo2{
+    background-color: var(--Cor05);
+    padding: var(--altura) 10px var(--altura) 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0% 20% 20% 0%;
+}
+#Enviar{
+    background-color: var(--Cor03);
+    margin: 20px;
+    color: var(--Cor01);
+}
+#Enviar:hover{
+    background-color: #ce9206;
+    margin: 20px;
+    color: #e2e2e2;
+    cursor: pointer;
+}
+#Enviar:active{
+    background-color: #aa7804;
+    margin: 20px;
+    color: #afafaf;
+    cursor: pointer;
+}
+

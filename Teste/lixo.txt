@@ -1,0 +1,80 @@
+<div id="Caixa">
+        <div id="Cartas">
+            <div id="Conteudo">
+                <p><strong>Peso</strong></p><input type="number" name="Peso" id="Peso">
+                <p><strong>Altura</strong></p><input type="number" name="Altura" id="Altura">
+            </div>
+            <input id="Enviar" onclick="Enviar()" type="submit" value="Enviar">
+        </div>
+        <div>
+            <h1 id="Res"></h1>
+            <a href="https://www.flaticon.com/br/icones-gratis/gordo" title="gordo ícones">Gordo ícones criados por Sudowoodo - Flaticon</a>
+        </div>
+    </div>
+
+
+
+
+    css
+
+    *{
+    padding: 0%;
+    margin: 0%;
+}
+#Caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: rgb(68, 68, 68);
+    height: 100vh;
+    width: 100vw;
+}
+#Cartas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 0, 191, 0.623);
+    width: 65%;
+}
+#Conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: rgb(231, 231, 231);
+}
+input{
+    background-color: rgb(140, 0, 255);
+    margin: 2%;
+    color: rgb(231, 231, 231);
+    font-size: 30px;
+}
+#Enviar{
+    padding: 1%;
+    color: rgb(231, 231, 231);
+    border-radius: 20%;
+    cursor: pointer;
+}
+#Res{
+    color: rgb(231, 231, 231);
+}
+
+
+
+js
+
+if(imc < 18.5){
+        console.log('Baixo peso');
+    }else{
+        if(imc > 25){
+            console.log('Peso ideal');
+        }else{
+            if(imc > 30){
+                console.log('Sobrepeso');
+            }
+        }
+    }

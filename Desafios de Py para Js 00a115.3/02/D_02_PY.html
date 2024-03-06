@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D_02_PY</title>
+    <style>
+        body{
+            background-color: rgb(46, 46, 46);
+        }
+        div{
+            color: rgb(123, 47, 194);
+        }
+    </style>
+</head>
+<body>
+    <div id="res">
+    </div>
+    <button onclick="bot()">Botão</button>
+    <script>
+        var dia = window.prompt('Qual é o dia do seu Nascimento?')
+        var mes = window.prompt('Qual é o mês do seu Nascimento?')
+        var ano = window.prompt('Qual é o ano do seu Nascimento?')
+        var nas = window.confirm(`Você Nasceu no dia ${dia} de ${mes} de ${ano}.Correto?`)
+        function bot(){
+            res.innerHTML= `<h1>Você Nasceu no dia ${dia} de ${mes} de ${ano}.Correto?</h1>`
+        }
+    </script>
+</body>
+</html>
