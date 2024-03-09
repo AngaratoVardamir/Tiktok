@@ -15,9 +15,11 @@ function Enviar(){
     //HTML
     const Categoria = document.getElementById('Categoria');
     const ImgCat = document.getElementById('ImgCat');
+    const Idade = document.getElementById('Idade');
 
     console.log(Categoria.innerHTML);
     console.log(ImgCat.src);
+    Idade.innerHTML = (`Idade: ${Cal} Anos`)
     if (Cal <= 14){
         Categoria.innerHTML = ("Infantil");
         ImgCat.setAttribute("src","active/Img/Infantil.png");
