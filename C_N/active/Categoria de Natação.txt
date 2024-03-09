@@ -1,0 +1,4 @@
+Categoria Infantil: Crianças e adolescentes de 13 e 14 anos.
+Categoria Juvenil: Adolescentes de 15 e 16 anos.
+Categoria Júnior: Adolescentes e adultos com 17, 18 e 19 anos.
+Categoria Sênior: Adultos com 20 anos acima.

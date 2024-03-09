@@ -1,0 +1,108 @@
+:root{
+    --Cor0: #232323;
+    --Cor1: #2d2e47;
+    --Cor2: #2f6c82;
+    --Cor3: #3e7996;
+    --Cor4: #069e6e;
+    --Cor5: #00bab4;
+    --Cor6: #cdcdcd;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: var(--Cor0);
+}
+/*=========================== Caixa 1 =========================*/
+.Cx1{
+    background-color: var(--Cor2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Cal_Rel{
+    margin: 4px;
+    width: 20%;
+    background-color: var(--Cor4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    max-width: 150px;
+    color: var(--Cor6);
+}
+/*=========================== Caixa 2 =========================*/
+.Cx2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 20vh;
+    background-color: rgba(0, 0, 255, 0.103);
+}
+.Couteudo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Cor1);
+
+    height: 100%;
+    width: 40%;
+}
+.Cx2 > input{
+    height: 20%;
+    width: 20%;
+}
+input{
+    margin: 5px;
+}
+.Couteudo2 > h4{
+    margin: 10px;
+    color: var(--Cor6);
+}
+.Couteudo2 > h3{
+    color: var(--Cor5);
+}
+.Couteudo2 > input{
+    height: 26%;
+    width: 90%;
+}
+/*=========================== Caixa 3 =========================*/
+.Cx3{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Couteudo3{
+    position: relative;
+    height: 320px;
+    width: 320px;
+    background-color: var(--Cor4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Couteudo3 > img{
+    width: 90%;
+}
+/*=========================== Footer =========================*/
+footer{
+    position: absolute;
+    bottom: 0%;
+    
+    width: 100vw;
+}
+footer > .Footer{
+    color: var(--Cor6);
+    background-color: #2f6c8288;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

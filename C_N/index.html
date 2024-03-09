@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasicação de Natação</title>
+    <link rel="stylesheet" href="active/Css/style.css"> 
+</head>
+<body>
+    <!-- ======= Caixa 1 ====== -->
+    <div class="Caixinha Cx1">
+        <span id="Relogio" class="Cal_Rel">00:00:00</span> <br>
+        <span id="Calendario" class="Cal_Rel">00/00/0000</span>
+    </div>
+    <!-- ======= Caixa 2 ====== -->
+    <div class="Caixinha Cx2">
+        <div class="Couteudo2 con1">
+            <h4>Data de Nascimento</h4>
+            <input type="text" placeholder="data de Nascimento: 00/00/0000" id="Data">
+        </div>
+        <input type="submit" value="Enviar" onclick="Enviar()">
+        <div class="Couteudo2 con2">
+            <h4>Categoria</h4>
+            <h3 id="Categoria">Desconhecido</h3>
+        </div>
+    </div>
+    <!-- ======= Caixa 3 ====== -->
+    <div class="Caixinha Cx3">
+        <div class="Couteudo3 con1">
+            <img id="ImgCat" src="active/Img/Desconhecido.jpg" alt="Categoria.Img">
+
+        </div>
+    </div>
+    <!-- ======= Footer ====== -->
+    <footer>
+        <div class="Footer con1">
+            Criandor por Gustavo Augusto/Mr Angaráto
+        </div>
+    </footer>
+    <script src="active/Js/Caixinha_Cx1.Js"></script>
+    <script src="active/Js/Caixinha_Cx2.Js"></script>
+
+    <!-- ======= Mask ====== -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#Data').mask('00/00/0000');
+    </script>
+</body>
+</html>
