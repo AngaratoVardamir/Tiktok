@@ -1,0 +1,4 @@
+Azul = #00F3EC  #01F2EB
+red = #FF0050
+
+musica = Strangers
