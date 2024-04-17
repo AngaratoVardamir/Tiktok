@@ -1,0 +1,47 @@
+//fuction
+const Limpar = document.getElementById("Limpar");
+const Tudo = [...document.querySelectorAll("input")];
+//Tela
+const Tela = document.getElementById("Calculador");
+const Igual = document.getElementById("Igual");
+
+const lista = []
+const Lista2 = []
+
+Tudo.map(el=>{
+    el.addEventListener("click",()=>{
+        let codStr = String(el.name).replace('*','X');
+        console.log(codStr);
+
+
+        lista.push(`${codStr}`);
+        Tela.innerHTML=(lista.join(""));
+    })
+})
+
+function resultado(){
+    Tela.innerHTML = eval(String(Tela.innerHTML))
+}
+
+Igual.addEventListener("click",()=>{
+    //substruir
+    lista.map((elemen)=>{
+        let melhorando = elemen.replace("X","*");
+        Lista2.push(`${melhorando}`);
+    })
+    console.log(Lista2);
+    if (lista.length > 2){
+        resultado()
+        while(lista.length) {
+            lista.pop();
+        }
+    }
+})
+
+// Limpar Tela
+Limpar.addEventListener("click",()=>{
+    while(lista.length) {
+        lista.pop();
+        Tela.innerHTML = ("");
+    }
+})
